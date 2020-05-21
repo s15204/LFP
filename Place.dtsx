@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="4/30/2020 4:34:56 PM"
+  DTS:CreationDate="5/21/2020 2:53:25 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="LAB214-20"
-  DTS:CreatorName="PJWSTK\s15204"
-  DTS:DTSID="{18A68EEC-9075-4173-8DB3-C439F84076A4}"
+  DTS:CreatorComputerName="DESKTOP-LDU3REO"
+  DTS:CreatorName="DESKTOP-LDU3REO\Kyresel"
+  DTS:DTSID="{5FA847D5-1023-474A-8561-61DC5CB81A42}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.121"
   DTS:LocaleID="1045"
-  DTS:ObjectName="Time"
+  DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{8759A672-98C6-4D76-B204-1F4F4DBE4F8F}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{ED6FB070-988A-40A7-BE90-970CDA9353AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-LDU3REO.LFB]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{2E521FCB-2347-43F2-9985-94E76B5EE8F9}"
+      DTS:DTSID="{BCA96F4C-B06C-405D-A58E-EA9240542D68}"
       DTS:ObjectName="DESKTOP-LDU3REO.LFB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -49,11 +49,11 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{F29415C5-D323-4322-82EF-3E80D522FFFB}"
+      DTS:DTSID="{4AFFF3C3-0CFC-4B2F-9839-62B3734CE294}"
       DTS:ObjectName="Excel Connection Manager 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Kyresel\Desktop\LFBProj\LFP\LFB Incident data from January 2017.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Kyresel\Desktop\LFBProj\LFP\LFB Incident data from January 2017.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -63,7 +63,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{AB1D9EDF-AD24-42EF-ABB3-E6CAB7B94426}"
+      DTS:DTSID="{F752CF3D-98B2-44ED-BADD-398A7329C02C}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task">
@@ -126,40 +126,34 @@
                   name="Excel Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[DateOfCall]"
-                      dataType="date"
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode_full]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[DateOfCall]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[DateOfCall]"
-                      name="DateOfCall"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Postcode_full]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode_full]"
+                      name="Postcode_full"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CalYear]"
-                      dataType="r8"
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_BoroughName]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[CalYear]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CalYear]"
-                      name="CalYear"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[IncGeo_BoroughName]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_BoroughName]"
+                      name="IncGeo_BoroughName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[TimeOfCall]"
-                      dataType="date"
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_WardName]"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[TimeOfCall]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[TimeOfCall]"
-                      name="TimeOfCall"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[HourOfCall]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[HourOfCall]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[HourOfCall]"
-                      name="HourOfCall"
+                      externalMetadataColumnId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[IncGeo_WardName]"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_WardName]"
+                      name="IncGeo_WardName"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -359,25 +353,23 @@
                       name="ErrorColumn"
                       specialFlags="2" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[DateOfCall]"
-                      dataType="date"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[DateOfCall]"
-                      name="DateOfCall" />
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode_full]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[Postcode_full]"
+                      name="Postcode_full" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[CalYear]"
-                      dataType="r8"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[CalYear]"
-                      name="CalYear" />
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[IncGeo_BoroughName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[IncGeo_BoroughName]"
+                      name="IncGeo_BoroughName" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[TimeOfCall]"
-                      dataType="date"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[TimeOfCall]"
-                      name="TimeOfCall" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[HourOfCall]"
-                      dataType="r8"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[HourOfCall]"
-                      name="HourOfCall" />
+                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[IncGeo_WardName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Error Output].Columns[IncGeo_WardName]"
+                      name="IncGeo_WardName" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -399,7 +391,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Time]</property>
+                  name="OpenRowset">[dbo].[Place]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -456,52 +448,47 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DateOfCall]"
-                      cachedDataType="date"
-                      cachedName="DateOfCall"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[DateOfCall]" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Postcode_full]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Postcode_full"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[post_code]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[Postcode_full]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TimeOfCall]"
-                      cachedDataType="date"
-                      cachedName="TimeOfCall"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[TimeOfCall]" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IncGeo_BoroughName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="IncGeo_BoroughName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[borough_name]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_BoroughName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[HourOfCall]"
-                      cachedDataType="r8"
-                      cachedName="HourOfCall"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[HourOfCall]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CalYear]"
-                      cachedDataType="r8"
-                      cachedName="CalYear"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
-                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[CalYear]" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IncGeo_WardName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="IncGeo_WardName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ward_name]"
+                      lineageId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].Columns[IncGeo_WardName]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_time]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_place]"
                       dataType="i4"
-                      name="id_time" />
+                      name="id_place" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[post_code]"
                       dataType="i4"
-                      name="year" />
+                      name="post_code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
-                      dataType="i4"
-                      name="date" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[borough_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="borough_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time]"
-                      dataType="i4"
-                      name="time" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hour]"
-                      dataType="i4"
-                      name="hour" />
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ward_name]"
+                      dataType="wstr"
+                      length="100"
+                      name="ward_name" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -555,7 +542,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="151,42"
+          Size="155,42"
           Id="Package\Data Flow Task"
           TopLeft="5.5,5.5" />
       </GraphLayout>
@@ -569,14 +556,14 @@
         <NodeLayout
           Size="171,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="432,272" />
+          TopLeft="506,282" />
         <NodeLayout
           Size="139,42"
           Id="Package\Data Flow Task\Excel Source"
-          TopLeft="306,96" />
+          TopLeft="380,106" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output]"
-          TopLeft="375.5,138">
+          TopLeft="449.5,148">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
