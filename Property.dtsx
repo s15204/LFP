@@ -7,56 +7,14 @@
   DTS:CreatorName="DESKTOP-LDU3REO\Kyresel"
   DTS:DTSID="{06CF6371-9837-43B2-BD2E-041D0B91588C}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{C3566D4E-3A8B-4289-8174-CDCB85BF15B5}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{9DF1F0A3-4149-4797-B53A-2526E8EC05A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[db-mssql.s15267]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{D4DF7B7E-627A-4898-9A8D-4B61C68AE1D6}"
-      DTS:ObjectName="db-mssql.s15267">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s15267;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-LDU3REO.LFB]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{86742160-4620-4503-9DF0-8275C0E26B6C}"
-      DTS:ObjectName="DESKTOP-LDU3REO.LFB">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-LDU3REO;Initial Catalog=LFB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{9F8F480C-CCD7-4EE6-B28D-16BE53653CB7}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\s15267\Desktop\LFB Incident data from January 2017.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{A13BAC85-CA58-41D3-A445-43FA5B1D7100}"
-      DTS:ObjectName="Excel Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Kyresel\Desktop\LFBProj\LFP\LFB Incident data from January 2017.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -115,8 +73,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  connectionManagerID="{9F8F480C-CCD7-4EE6-B28D-16BE53653CB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -315,14 +273,6 @@
                       refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Notional Cost (£)]"
                       dataType="r8"
                       name="Notional Cost (£)" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[LEN_BoroughName]"
-                      dataType="r8"
-                      name="LEN_BoroughName" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[LEN_WardName]"
-                      dataType="r8"
-                      name="LEN_WardName" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -418,8 +368,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-LDU3REO.LFB]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LDU3REO.LFB]"
+                  connectionManagerID="{D4DF7B7E-627A-4898-9A8D-4B61C68AE1D6}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s15204]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -515,7 +465,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="155,42"
+          Size="154.666666666667,42"
           Id="Package\Data Flow Task"
           TopLeft="5.5,5.5" />
       </GraphLayout>
@@ -527,13 +477,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="186,236" />
-        <NodeLayout
-          Size="139,42"
+          Size="138.666666666667,42"
           Id="Package\Data Flow Task\Excel Source"
           TopLeft="60,60" />
+        <NodeLayout
+          Size="170.666666666667,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="186,236" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output]"
           TopLeft="129.5,102">

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "LFB-multidim", "LFB-multidim.dwproj", "{B5628F03-D7C1-4B6D-A878-194918DC9680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5628F03-D7C1-4B6D-A878-194918DC9680}.Development|Default.ActiveCfg = Development
+		{B5628F03-D7C1-4B6D-A878-194918DC9680}.Development|Default.Build.0 = Development
+		{B5628F03-D7C1-4B6D-A878-194918DC9680}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF120EB4-5117-407E-AC7B-E4FAE7B0FE9C}
+	EndGlobalSection
+EndGlobal
