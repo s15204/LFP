@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f4324b4d-a172-4e34-b584-f3fa5155312a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bca649c4-6cb1-4dbe-bf92-b188b1a148cf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Place</ID>
   <Name>Place</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,39 +68,39 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0733a5fc-e1b4-4ed9-aa57-8ff5934b434d">
-    <DataSourceViewID>s15204</DataSourceViewID>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6a6b428b-711d-4eb2-8bb8-6adb65547c73">
+    <DataSourceViewID>LFB</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="a389c16c-6a62-46b8-ad5d-05482b3831a2">
+  <ErrorConfiguration dwd:design-time-name="29090872-0d42-4b22-b778-03946d09aeb7">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="91480650-5953-4d18-9368-7f1281c6236f">
+    <Attribute dwd:design-time-name="6fce9d48-a4cb-47e8-bb9f-539f75ff6997">
       <ID>Place</ID>
       <Name>Place</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="deee9902-fd94-496a-8710-0540679fe4c6">
+        <KeyColumn dwd:design-time-name="87d93593-b1d7-4ff2-9037-977505062a85">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa7eda25-6603-4f10-a736-2b56227417a1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf8081db-feb7-4b45-9cc6-3e2acf12aee4">
             <TableID>dbo_Place</TableID>
             <ColumnID>id_place</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="860d1184-c2f9-4538-b58b-b2bec4cfaec5">
+        <AttributeRelationship dwd:design-time-name="d49218fa-013e-45e6-85b9-7c777d2e220f">
           <AttributeID>Post Code</AttributeID>
           <Name>Post Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7ec5b3f0-b789-420f-9d5c-2bc8a06ea545">
+        <AttributeRelationship dwd:design-time-name="0d04eb94-6fcd-46cc-a497-a4d95180d880">
           <AttributeID>Borough Name</AttributeID>
           <Name>Borough Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f971cce8-c5c5-4e87-95d0-d0b62d9f68ca">
+        <AttributeRelationship dwd:design-time-name="0f026c38-f681-41e8-86cd-7b506f10ff36">
           <AttributeID>Ward Name</AttributeID>
           <Name>Ward Name</Name>
         </AttributeRelationship>
@@ -109,13 +109,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1b15cc7e-49e6-48d6-ad74-7d70a7bb921b">
+    <Attribute dwd:design-time-name="71411b36-8462-414a-a34e-1a8d37b19990">
       <ID>Post Code</ID>
       <Name>Post Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2954055c-025d-4ee3-9b7e-7a5fb83e47b7">
+        <KeyColumn dwd:design-time-name="c059ab91-94b8-4cf1-8524-7c13e6864fee">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="02fc2040-5732-4543-bd29-d131366d16c4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5efda621-a554-49f5-b1b7-90a7ea842a49">
             <TableID>dbo_Place</TableID>
             <ColumnID>post_code</ColumnID>
           </Source>
@@ -125,14 +125,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3cafce69-52d3-4783-ae44-09ad839083a7">
+    <Attribute dwd:design-time-name="e20c089f-65c5-41f0-8f61-543a9e767409">
       <ID>Borough Name</ID>
       <Name>Borough Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="eead624e-8131-4a1e-8d85-f8feeb1518b0">
+        <KeyColumn dwd:design-time-name="f41ad8a2-f3ef-43a7-8eb3-75c72db1acfb">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="266961d4-79f1-4785-9d3f-8ac83ff6255d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="393034b9-b940-44e8-9fc0-51fb5173bc0c">
             <TableID>dbo_Place</TableID>
             <ColumnID>borough_name</ColumnID>
           </Source>
@@ -142,14 +142,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2c4f3a90-439d-4207-8ffb-e5d3606b4a98">
+    <Attribute dwd:design-time-name="af1b9d1c-19fb-4d6a-8615-08e6e12f5c72">
       <ID>Ward Name</ID>
       <Name>Ward Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="340d7e18-34eb-4549-af88-8ee75c511295">
+        <KeyColumn dwd:design-time-name="f63c6bf8-d3dd-4e72-b99f-cef0d4e41797">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5a9c467-9bf8-43b9-ad65-aa0dcc330688">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cae5b6e-1bbf-4490-a825-1f72e3417b9c">
             <TableID>dbo_Place</TableID>
             <ColumnID>ward_name</ColumnID>
           </Source>
@@ -161,26 +161,26 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="ddfb575e-f239-4b9b-ba4c-267bcc007cf0">
+    <Hierarchy dwd:design-time-name="5fcc58ab-d7a3-429f-961e-89473b4b42ce">
       <ID>Hierarchy</ID>
       <Name>Place hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="a77a2214-c152-4e3b-beb5-54c85ced8877">
+        <Level dwd:design-time-name="1ee7a119-32d6-46a2-b38e-1c564b7c54e3">
           <ID>Place</ID>
           <Name>Place</Name>
           <SourceAttributeID>Place</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="d529e561-e4fe-492a-9d2d-3f2369ce43e8">
+        <Level dwd:design-time-name="6838e4ef-2c0d-4afb-8726-b48d387f981b">
           <ID>Post Code</ID>
           <Name>Post Code</Name>
           <SourceAttributeID>Post Code</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="70f32d46-0ce6-4562-8ac8-42665de577a0">
+        <Level dwd:design-time-name="2cd65d2c-eed1-4317-9f11-4e44b9d2cfbc">
           <ID>Borough Name</ID>
           <Name>Borough Name</Name>
           <SourceAttributeID>Borough Name</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="be25b054-6fa0-4406-9ee5-5c26675b9add">
+        <Level dwd:design-time-name="94960474-18c0-439f-840d-31716d100af5">
           <ID>Ward Name</ID>
           <Name>Ward Name</Name>
           <SourceAttributeID>Ward Name</SourceAttributeID>

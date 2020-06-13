@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ef9bc1e5-c4a8-4ff3-bce9-1804c5f179e1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="de63f22c-a633-4ed8-917f-4167de39897e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>LFB</ID>
   <Name>LFB</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -43,135 +43,135 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="b2638b0e-7e65-487c-8e2e-ad1c6747507d">
-      <ID>Type</ID>
-      <Name>Type</Name>
-      <DimensionID>Type</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="2930412d-d713-4aab-b44a-a4a6576497b2">
-          <AttributeID>Type</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="7a09aefe-24e4-4647-a082-4babfbf35d70">
-          <AttributeID>Incident Group</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="594f3ecc-e916-49de-8021-99ca88f94233">
-          <AttributeID>Stop Code Description</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="521dfdf1-1bc9-4a79-b794-2f393c10f04b">
-          <AttributeID>Special Service Type</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="9cfd1636-ec83-42f7-b261-87301e604c9d">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
-    <Dimension dwd:design-time-name="b0d26e76-2735-46c2-85b9-47e7201061d9">
-      <ID>Place</ID>
-      <Name>Place</Name>
-      <DimensionID>Place</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="2d15a374-4adf-42a0-9deb-db614c5b3cb8">
-          <AttributeID>Place</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="0d0aec7b-b329-4a3c-ae5b-5d544dc626d8">
-          <AttributeID>Post Code</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="88106926-6282-4446-9e26-8795c891289f">
-          <AttributeID>Borough Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4c302b9e-e6ac-42b7-97ec-d5048fdd3253">
-          <AttributeID>Ward Name</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="9bda5ccd-69ac-4c40-85f2-78145fd1bbbc">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
-    <Dimension dwd:design-time-name="74605212-c4e0-4a12-b504-faf6485e1e01">
-      <ID>Time</ID>
-      <Name>Time</Name>
-      <DimensionID>Time</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="edf82852-2729-4454-be5f-8ff012f47512">
-          <AttributeID>Time ID</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="5e9dc6de-c2a4-4369-bb43-dcdbf6b51a8d">
-          <AttributeID>Year</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="2d7e88d2-5dc5-46d0-847c-2cb258aec521">
-          <AttributeID>Date</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="d1ac0b45-d1c0-4886-ba48-c4cc9f784e49">
-          <AttributeID>Time</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a777a361-4b61-4494-9959-2cec04fef706">
-          <AttributeID>Hour</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="d2f3b9a5-f963-4ef2-9fda-20180217489a">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
-    <Dimension dwd:design-time-name="ef4e54be-8201-417a-8042-16bc27793d50">
-      <ID>Vehicles</ID>
-      <Name>Vehicles</Name>
-      <DimensionID>Vehicles</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="7757cc92-015c-44fc-b8f0-157af7849a62">
-          <AttributeID>Vehicles</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="76313c15-d7e8-417a-8595-9f5a1d3a1806">
-          <AttributeID>First Vehicle Arrival</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="c6c40831-7b84-4d3f-aea0-e33cb8e953c7">
-          <AttributeID>First Vehicle Station</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4677c26b-6ae6-438b-b0c4-d0d3ceaf5be9">
-          <AttributeID>Second Vehicle Arrival</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="5d1a9bae-ca14-44e4-8197-cc868ca75f8d">
-          <AttributeID>Second Vehicle Station</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="898ebda7-8678-4e24-991c-f38586e99918">
-          <AttributeID>Number Of Vehicles</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="5f9e7fb7-0acc-4793-b541-58202e81de8a">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
-    <Dimension dwd:design-time-name="a61c47ec-fb6e-47e5-927a-d1c5e16ddf80">
+    <Dimension dwd:design-time-name="9918c19d-abfb-482d-844d-35cfef48146d">
       <ID>Property</ID>
       <Name>Property</Name>
       <DimensionID>Property</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4995600c-6b0e-4ddc-99ec-cbe53dac9dd7">
+        <Attribute dwd:design-time-name="d67e6ffe-545a-4db0-bde6-1a059d9f43bb">
           <AttributeID>Property</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="11ed975a-5c97-45e6-bd8c-e4f0f78cc522">
+        <Attribute dwd:design-time-name="624600b8-2edf-4938-9043-37fdb5ab1160">
           <AttributeID>Category</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9a441248-40b2-4d58-91a3-f11e77cfaaa7">
+        <Attribute dwd:design-time-name="511005aa-7b42-4b21-8ff9-d7d59c9ce464">
           <AttributeID>Type</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d8311e56-66ef-44c5-8ca9-78fb719a727d">
+        <Hierarchy dwd:design-time-name="b5d960dc-0fe3-4a60-90c0-6869947e6fb3">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="26b674e7-b018-49e1-9bce-5a578d0baf03">
+      <ID>Vehicles</ID>
+      <Name>Vehicles</Name>
+      <DimensionID>Vehicles</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f935b71f-6dde-4d52-98cc-0a76835b0134">
+          <AttributeID>Vehicles</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="06bd2ac2-8503-446e-b325-d2e584834d91">
+          <AttributeID>First Vehicle Arrival</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a39f92d4-5e5e-4c7b-b452-83b691c10727">
+          <AttributeID>First Vehicle Station</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="accfe594-c0cd-4dc6-80cd-cf1e473e6bf8">
+          <AttributeID>Second Vehicle Arrival</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="204a5d55-4d47-4681-b61e-d3989495f436">
+          <AttributeID>Secon Vehicle Station</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b19ffebc-621f-459a-9ee0-9bb514b11fd7">
+          <AttributeID>Number Of Vehicles</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2b753852-77ba-42e5-96da-2254f651b0ba">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ddb4c97b-366a-4136-a4bf-0e7aaae88421">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f39fe479-9c4d-4751-b7f3-08d753ea2f45">
+          <AttributeID>Time ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e46480c5-68af-4ce4-8077-343e7d2a2ca6">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d4a5912-cf09-4b43-a23c-d11469a7be2f">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a39d0a7-64d5-4084-b912-c5cbd6a7fb7e">
+          <AttributeID>Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc210fb8-780b-400c-9148-c448c6930df3">
+          <AttributeID>Hour</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5601bc3f-7754-48b6-98ac-a0dddb90e01e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c7e771f4-ecf4-409c-9e4f-43cb610631d3">
+      <ID>Place</ID>
+      <Name>Place</Name>
+      <DimensionID>Place</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="02673089-7e20-4f72-b730-5bffb5355af9">
+          <AttributeID>Place</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e56b184f-8082-4163-8826-9a3824a2f3e5">
+          <AttributeID>Post Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3641cf53-7d59-4b65-a77b-d8a37a4e6c12">
+          <AttributeID>Borough Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e26a923b-28cd-4ce5-8167-28bba213cd9a">
+          <AttributeID>Ward Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7869c438-105a-41e2-8125-eecb5ffbdff8">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c42a6c06-ec25-45ca-ab26-f1bacf99fea8">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <DimensionID>Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0a239e91-c460-4d27-a0b9-efa0218c888f">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9133466c-9332-4654-bb4b-ef03edd0f65d">
+          <AttributeID>Incident Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44a87692-6cb6-4be1-8b21-581b81b78e13">
+          <AttributeID>Stop Code Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="84353dd2-2f9b-490f-b089-4569b2d6e6ac">
+          <AttributeID>Special Service Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e8d7af1c-5615-4a27-b0f1-68bedc924999">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="ae2d5c2d-d27b-4f13-8d3d-9102ebbf6625">
+    <MeasureGroup dwd:design-time-name="45571f53-59d5-4f01-99d6-3cb3a11418d8">
       <ID>Incident</ID>
       <Name>Incident</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -179,36 +179,36 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="12ed59dc-174b-4d86-bc2f-540c46ac3986">
+        <Measure dwd:design-time-name="495c7470-a39f-428e-b7e6-6e4c91e4ebd8">
           <ID>Pump Hours</ID>
           <Name>Pump Hours</Name>
-          <Source dwd:design-time-name="656dcad4-76da-41f6-8727-bfd6242e8664">
+          <Source dwd:design-time-name="d7dac47f-b5d3-448b-8dbc-8b7035a0fddc">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="4c66ef04-69b9-4741-b354-0f6964b64021">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3571e3f7-32e4-4b66-8458-eb4130db0d87">
               <TableID>dbo_Incident</TableID>
               <ColumnID>pump_hours</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="5bb9daa8-eaef-406b-b186-be23aa6b99fc">
+        <Measure dwd:design-time-name="82ddddfd-956f-48d3-a311-2826d131f953">
           <ID>Notional Cost</ID>
           <Name>Notional Cost</Name>
-          <Source dwd:design-time-name="331ee562-6186-4833-a96e-a29f27675edc">
+          <Source dwd:design-time-name="4a4bb6c5-4a15-452d-9c6f-3f97dfdce243">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="a6ea9483-f5cf-4bc7-96c1-e7e7d9db3f5a">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bcc5b190-b4be-4a4d-933d-28eaedf9c50d">
               <TableID>dbo_Incident</TableID>
               <ColumnID>notional_cost</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="c651eaf3-059e-45b7-a240-b73cf87cf1a5">
+        <Measure dwd:design-time-name="5324686a-cc71-4de9-81a2-42827ce04727">
           <ID>Incident Count</ID>
           <Name>Incident Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="f4b273d0-b5e2-4ecb-9ff0-e67addb383b2">
+          <Source dwd:design-time-name="bedc29b4-96b1-4fe6-8aab-ca4d72ec5e28">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="2306a856-b211-4eec-a427-e75f56f45462">
+            <Source xsi:type="RowBinding" dwd:design-time-name="1e86be1d-b452-45e8-aeb6-db6355eb7ed4">
               <TableID>dbo_Incident</TableID>
             </Source>
           </Source>
@@ -217,17 +217,17 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ad67b31a-e79e-47f7-8f4a-029c543515bc">
-          <CubeDimensionID>Type</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ee2e5af-13bf-4fd6-956b-d55cd083ae5d">
+          <CubeDimensionID>Property</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7a4b7c62-6fbb-4af5-a775-3ccb97b62514">
-              <AttributeID>Type</AttributeID>
+            <Attribute dwd:design-time-name="e4472a34-3368-4348-aa11-4a4cb9e71929">
+              <AttributeID>Property</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="5643c76b-5ffa-4f14-b6bb-3d98b8533c2a">
+                <KeyColumn dwd:design-time-name="663844f8-5cc2-4709-b858-f870ddfd69b5">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="648dbcf9-376c-489c-91eb-790d6e01ba37">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ee167c8-cf53-41f2-81b2-6b6c35ec6c30">
                     <TableID>dbo_Incident</TableID>
-                    <ColumnID>id_type</ColumnID>
+                    <ColumnID>id_property</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -235,51 +235,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="26bab9e8-b254-4459-a78d-25919be9805b">
-          <CubeDimensionID>Place</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="005b3930-8642-4f4f-8c77-1733b08704ae">
-              <AttributeID>Place</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="0ea6b8b9-a1d3-4a38-8cba-a7885dc4a9fd">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="084f5453-a8e1-4c2a-9150-cb9d8c21fb70">
-                    <TableID>dbo_Incident</TableID>
-                    <ColumnID>id_place</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d1c1768d-9463-4657-bdb6-cc28d041f749">
-          <CubeDimensionID>Time</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="0795a1c4-762f-4a06-a441-3ba86b7b0627">
-              <AttributeID>Time ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="77defa3e-12aa-4fea-91d8-672e3200252f">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="270d8253-e7f9-44b2-813d-ad4ff1575016">
-                    <TableID>dbo_Incident</TableID>
-                    <ColumnID>id_time</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="be0c5667-ebf1-4aca-aeb9-770dad6bec9d">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d00e96fb-d0c8-4c5d-84d7-13cd7a0c56d2">
           <CubeDimensionID>Vehicles</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="2469bf0f-14e9-4e29-a8ac-c26ffd8d285d">
+            <Attribute dwd:design-time-name="db97554b-045f-40d0-8490-4466ce839e96">
               <AttributeID>Vehicles</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="9625a188-b384-461b-aa3e-6e54c6a709d2">
+                <KeyColumn dwd:design-time-name="6c873049-31b9-4567-ae6c-27f3348106e6">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d3a4fac6-eaa6-4306-9376-5ee8cce77d60">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e8b97f2d-9ce6-4894-9eba-e50f44d9ff3e">
                     <TableID>dbo_Incident</TableID>
                     <ColumnID>id_vehicles</ColumnID>
                   </Source>
@@ -289,17 +253,53 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6af6cddc-be54-4222-b77b-f6849ae0fed3">
-          <CubeDimensionID>Property</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eaf77f41-c029-48f2-a815-935b0eb1a142">
+          <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="67c345ac-9ab7-4244-a197-4ad792d554ca">
-              <AttributeID>Property</AttributeID>
+            <Attribute dwd:design-time-name="26311dce-f93d-47b2-9130-4409b4c37d83">
+              <AttributeID>Time ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1497061a-ce58-46c9-b65b-ac21815e816e">
+                <KeyColumn dwd:design-time-name="e8e1f682-6355-42e6-a381-ac6bed5683f5">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4742308c-c4c9-4901-b01d-ad0e57fe034f">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4c81810-f93c-4af6-94dc-178aed93682f">
                     <TableID>dbo_Incident</TableID>
-                    <ColumnID>id_property</ColumnID>
+                    <ColumnID>id_time</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="03fed9d2-95f7-4968-8aad-15c66a77118e">
+          <CubeDimensionID>Place</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8fbbe9ab-1abe-4d67-b1f3-bc62f6f150f0">
+              <AttributeID>Place</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce054d75-ffdd-454a-8273-7f80470835da">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d081e2a6-339e-4ea7-9410-146351806bc7">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>id_place</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea70f412-94c5-4bdf-b21d-262381264f70">
+          <CubeDimensionID>Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59f5fb89-244f-4e28-b82e-642067af6b76">
+              <AttributeID>Type</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e748ba6b-2de1-4e43-8cb9-e9ed8235e12c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0bfb1721-43bb-4128-ac07-f0560664f883">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>id_type</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -311,7 +311,7 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="0beaffd3-4eaf-4261-9bc0-01bbb6143bd5">
-    <DataSourceViewID>s15204</DataSourceViewID>
+  <Source dwd:design-time-name="67a15fac-4554-440c-85d9-30f9005ad15a">
+    <DataSourceViewID>LFB</DataSourceViewID>
   </Source>
 </Cube>

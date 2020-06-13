@@ -52,21 +52,27 @@
       <FullPath>LFB.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role.role</Name>
+      <FullPath>Role.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
       <Options>
         <ConnectionMappings>
           <ConfigurationSetting>
-            <Id>s15204</Id>
-            <Name>s15204</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=db-mssql;Integrated Security=SSPI;Initial Catalog=s15204</Value>
+            <Id>LFB</Id>
+            <Name>LFB</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=bart-pc;Integrated Security=SSPI;Initial Catalog=dbo</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
-            <Id>s15204</Id>
-            <Name>s15204</Name>
+            <Id>LFB</Id>
+            <Name>LFB</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
